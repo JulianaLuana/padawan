@@ -6,19 +6,7 @@
     margin: 0 auto; 
 }
 
-.img1{
-    display: flex;
-    width: auto;
-    justify-content: space-between;
-}
-
-img{
-    width: 260px;
-    height: 100%;
-}
-
-.img2{
-    display: flex;
-    width: auto;
-    justify-content: space-between;
+.listagem {
+    display: inline-block;
+    margin-left:40px;
 }

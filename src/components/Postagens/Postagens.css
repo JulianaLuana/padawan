@@ -19,21 +19,6 @@ img{
     margin: 12px;
 }
 
-.postagem li {
-    display: inline-block;
-    margin-left: 8px;
-}
-
-.postagem ul {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-    margin-right: 8px;
-    font-size: 20px;
-}
-
 h1{
     font-size: 30px;
 }

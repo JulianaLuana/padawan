@@ -1,31 +1,40 @@
 import React from 'react';
 import './ToDos.css'
 
+var todosList = [ {
+        "userId": 1,
+        "id": 1,
+        "title": "delectus aut autem",
+        "completed": false
+      },
+      {
+        "userId": 1,
+        "id": 2,
+        "title": "quis ut nam facilis et officia qui",
+        "completed": false
+      },
+      {
+        "userId": 1,
+        "id": 3,
+        "title": "fugiat veniam minus",
+        "completed": false
+      }
+]
 
 var ToDos = () => {
     return(
         <section>
             <h1> To-Dos </h1>
-            <div className="listas">
-                <ul className="to-do">
-                    <li>Compras:</li>
-                    <li> <input type="checkbox"/> Arroz - 2kg</li>
-                    <li> <input type="checkbox"/> Feijão - 1kg</li>
-                    <li> <input type="checkbox"/> Macarrão - 2pcts</li>
-                </ul>
-
-                <ul className="to-do">
-                    <li>Afazeres Domésticos:</li>
-                    <li> <input type="checkbox"/> Lavar Roupa</li>
-                    <li> <input type="checkbox"/> Lavar Louça</li>
-                    <li> <input type="checkbox"/> Arrumar Camas</li>
-                </ul>
-
-                <ul className="to-do">
-                    <li>Trabalho Escolar:</li>
-                    <li> <input type="checkbox"/> Realizar Pesquisa</li>
-                    <li> <input type="checkbox"/> Organizar pesquisa em tópicos</li>
-                    <li> <input type="checkbox"/> Montar apresentação</li>
+            <div className="box">
+            <ul className="to-do">
+                    {
+                        todosList.map( x => {
+                            return (
+                            <li key={x.id}>
+                                <input type="checkbox"/> {x.title}
+                            </li>
+                        ) } )
+                    }  
                 </ul>
             </div>
         </section>
