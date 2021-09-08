@@ -1,0 +1,20 @@
+section{
+    font-family: Hina Mincho, serifa;
+    font-size: 20px;
+    color:#15bacf;
+    width: 60%;
+}
+
+.listas{
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.to-do {
+    background-color: #9f98fa;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}

@@ -1,0 +1,31 @@
+nav {
+    text-align: center;
+    margin:0;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 2;
+    padding:0%;
+  }
+
+.principal {
+    background-color: #15bacf;
+    max-width:60%;
+    margin:0 auto;
+    height:40px;
+    border-radius: 10px;
+  }
+
+.principal ul li a {
+    color:#ffffff;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    font-weight: normal;
+  }
+  
+.principal li{
+     display: inline-block;
+     line-height: 2.5;
+     margin:0 89px;
+  }
